@@ -23,10 +23,20 @@ namespace MainChip.Modules
 
 
             await ReplyAsync("", false, builder.Build());
+        }
 
 
 
+        [Command("WhoisTing")]
+        public async Task Pingasync()
+        {
+            EmbedBuilder builder = new EmbedBuilder();
+            builder.WithTitle("LordTing?")
+                .WithDescription("He is the one, the only...... burrito man")
+                .WithColor(Color.Blue);
 
+
+            await ReplyAsync("", false, builder.Build());
 
         }
     }
